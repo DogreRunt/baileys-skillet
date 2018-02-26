@@ -9,7 +9,7 @@
 
 /*********** Begin Layout Styles ***********/
 body {
-  background-color: #99ffff;
+  background-image: #99ffff;
 }
 
 div.container {
@@ -27,13 +27,18 @@ header, main, footer {
 /* phones (base layout is mobile-first) */
 header {
   border: 3px solid #990000;  /*disable this line once layout works */
+  color: #ff0005;
   display: grid;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 190px;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "logo"
     "name";
+  text-align: center;
 }
 
 main {
@@ -58,7 +63,6 @@ footer {
   grid-template-areas:
     "social"
     "contact"
-    "manager"
     "credits";
 }
 
@@ -66,6 +70,7 @@ footer {
 @media (min-width: 600px) {
 
   header {
+    font-size: 155px;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
       "logo name";
@@ -84,7 +89,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "social contact"
-    "credits manager";
+    "credits credits";
   }
 }
 
@@ -108,7 +113,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "social contact"
-    "credits manager";
+    "credits credits";
   }
 }
 
@@ -139,6 +144,9 @@ div#map {
 }
 
 div#hours {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 35px;
   grid-area: hours;
 }
 
@@ -148,10 +156,6 @@ div#menu {
 
 div#reviews {
   grid-area: reviews;
-}
-
-div#manager {
-  grid-area: manager;
 }
 
 div#social {
