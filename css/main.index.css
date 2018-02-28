@@ -31,12 +31,10 @@ header {
   display: grid;
   font-family: 'Pacifico', cursive;
   font-family: 'Cookie', cursive;
-  font-size: 190px;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "logo"
     "name";
   text-align: center;
 }
@@ -118,12 +116,12 @@ footer {
 }
 
 div {
-  border: 1px solid #999999;  /*disable this line once layout works */
-  text-align: center;  /*disable this line once layout works */
+  /*border: 1px solid #999999; /* disable this line once layout works */
+  /*text-align: center;  /*disable this line once layout works */
 }
 
 main div {
-    min-height: 80px;  /*disable this line once layout works */
+  /*min-height: 80px;  /*disable this line once layout works */
 }
 
 div#logo {
@@ -132,6 +130,7 @@ div#logo {
 
 div#name {
   grid-area: name;
+  font-size: 75px;
 }
 
 div#carousel {
@@ -148,26 +147,38 @@ div#hours {
   font-family: 'Cookie', cursive;
   font-size: 35px;
   grid-area: hours;
+  text-align: center;
 }
 
 div#menu {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 30px;
   grid-area: menu;
+  text-align: center;
 }
 
 div#reviews {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 25px;
   grid-area: reviews;
+  text-align: center;
 }
 
 div#social {
   grid-area: social;
+  text-align: center;
 }
 
 div#contact {
   grid-area: contact;
+  text-align: center;
 }
 
 div#credits {
   grid-area: credits;
+  text-align: center;
 }
 
 @media (min-width: 600px) {
