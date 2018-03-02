@@ -1,22 +1,22 @@
 /* Color Palette
-  White: #ffffff;
-  Black: #000000;
-  Medium Gray: #999999;
-  Light Gray: #dddddd;
-  Light blue: #99ffff;
+  Ivory: #FFFFEF;
+  Beige: #F5F4DB;
+  White: #FFFFFF;
+  Pink: #FFB7C1;
+  Grey: #B4B3B1;
 */
 
 
 /*********** Begin Layout Styles ***********/
 body {
-  background-image: #99ffff;
+    background-color: #F5F4DB;
 }
 
 div.container {
-  background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px; /* disable this line if you want full-width layouts */
+  padding: 15px;
 }
 
 header, main, footer {
@@ -26,8 +26,8 @@ header, main, footer {
 
 /* phones (base layout is mobile-first) */
 header {
-  border: 3px solid #990000;  /*disable this line once layout works */
-  color: #ff0005;
+  /* border: 3px solid #990000;  /*disable this line once layout works */
+  color: #FFB7C1;
   display: grid;
   font-family: 'Pacifico', cursive;
   font-family: 'Cookie', cursive;
@@ -40,7 +40,7 @@ header {
 }
 
 main {
-  border: 3px solid #009900;  /*disable this line once layout works */
+  /* border: 3px solid #009900;  /*disable this line once layout works */
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -53,7 +53,7 @@ main {
 }
 
 footer {
-  border: 3px solid #000099;  disable this line once layout works */
+  /* border: 3px solid #000099;  disable this line once layout works */
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -125,6 +125,7 @@ main div {
 }
 
 div#logo {
+  display: none;
   grid-area: logo;
 }
 
@@ -159,6 +160,7 @@ div#menu {
 }
 
 div#reviews {
+  display: none;
   font-family: 'Pacifico', cursive;
   font-family: 'Cookie', cursive;
   font-size: 25px;
@@ -172,17 +174,31 @@ div#social {
 }
 
 div#contact {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 30px;
   grid-area: contact;
   text-align: center;
 }
 
 div#credits {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  font-size: 25px;
   grid-area: credits;
   text-align: center;
 }
 
 @media (min-width: 600px) {
   div#carousel {
+    display: block;
+    }
+
+  div#logo {
+    display: block;
+    }
+
+  div#reviews {
     display: block;
   }
 }
@@ -202,7 +218,7 @@ h2 {
 }
 
 h3 {
-
+  color: #FFB7C1;
 }
 
 h4 {
@@ -259,25 +275,29 @@ td {
 
 /* images */
 img {
+  max-width: 100%;
+}
 
+iframe {
+  max-width: 100%;
 }
 
 /* links */
 
 a:link {
-
+  color: #FFB7C1;
 }
 
 a:visited {
-
+  color: #B4B3B1;
 }
 
 a:hover {
-
+  color: #FFB7C1;
 }
 
 a:active {
-
+  color: #B4B3B1;
 }
 
 /* forms */

@@ -2,18 +2,21 @@
 
 <html>
 <head>
-  <title>Menu</title>
+  <title>Bailey's Skillet</title>
   <link href="css/main.menu.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Pacifico" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
 </head>
 
 <body>
+
   <div class="container">
 
     <header>
-      <div id="logo"><img src="img/logo.png" alt="Logo"></div>
-      <link href="main.css" rel="stylesheet">
-      <div id="name">Bailey's Skillet Menu</div>
+      <div id="logo"><h1><img src="img/logo.png" alt="Bailey's Skillet"></h1></div>
+      <div id="name"><h1>Bailey's Skillet Menu</h1></div>
     </header>
 
     <main>
@@ -85,10 +88,56 @@
     </main>
 
     <footer>
-
+      <div id="social">
+        <a href="https://www.instagram.com/baileys_skillet/"> <img src="img/instagram.png" alt="Instagram"></a>
+        <a href="https://mobile.twitter.com/BaileysSkillet"> <img src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://m.facebook.com/george.bailey.7902564?ref=bookmarks"> <img src="img/facebook.png" alt="Facebook"></a>
+      </div>
+      <div id="contact"><p>Call Us! (800)-555-1017</p>
+      <p><a href="https://www.google.com/"> Email Us!</a></p></div>
+      <div id="credits">By Michaela Ravan</div>
     </footer>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          dots: true,
+          items: 2,
+          loop: true,
+          margin: 10,
+          nav: false
+      })
+    });
+  </script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Menu</title>
+  <link href="css/main.menu.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div id="logo"><img src="img/logo.png" alt="Logo"></div>
+      <link href="main.css" rel="stylesheet">
+      <div id="name">Bailey's Skillet Menu</div>
+
 
 </body>
 </html>
