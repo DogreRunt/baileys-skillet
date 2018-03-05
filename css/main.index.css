@@ -27,16 +27,12 @@ header, main, footer {
 /* phones (base layout is mobile-first) */
 header {
   /* border: 3px solid #990000;  /*disable this line once layout works */
-  color: #FFB7C1;
   display: grid;
-  font-family: 'Pacifico', cursive;
-  font-family: 'Cookie', cursive;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "name";
-  text-align: center;
 }
 
 main {
@@ -131,7 +127,6 @@ div#logo {
 
 div#name {
   grid-area: name;
-  font-size: 75px;
 }
 
 div#carousel {
@@ -210,28 +205,66 @@ div#credits {
 
 /* Headings */
 h1 {
-
+  font-size: 75px;
+  color: #FFB7C1;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  text-align: center;
 }
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 145px;
+  }
+}
+
 
 h2 {
-
-}
-
-h3 {
+  font-size: 55px;
   color: #FFB7C1;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  text-align: center;
 }
 
-h4 {
-
+@media (min-width: 600px) {
+  h2 {
+    font-size: 65px;
+  }
 }
 
-h5 {
-
+@media (min-width: 900px) {
+  h2 {
+    font-size: 100px;
+  }
 }
 
-h6 {
-
+p {
+  font-size: 35px;
+  color: #000000;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Cookie', cursive;
+  text-align: center;
 }
+
+@media (min-width: 600px) {
+  p {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  p {
+    font-size: 50px;
+  }
+}
+
 
 /* Paragraphs and lists */
 
