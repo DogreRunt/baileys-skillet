@@ -1,5 +1,5 @@
 /* Color Palette
-  Ivory: #FFFFEF;
+  Black: #000000;
   Beige: #F5F4DB;
   White: #FFFFFF;
   Pink: #FFB7C1;
@@ -99,7 +99,7 @@ footer {
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:
       "carousel carousel carousel"
-      "map hours menu"
+      "map menu reviews"
       "map hours reviews"
   }
 
@@ -241,7 +241,7 @@ h2 {
 
 @media (min-width: 900px) {
   h2 {
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 
@@ -261,7 +261,7 @@ p {
 
 @media (min-width: 900px) {
   p {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
